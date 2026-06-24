@@ -6,6 +6,15 @@
 
 HTML, CSS, JavaScript를 활용해 제작한 웹 프로젝트와 기술 스택, 자기소개를 담은 포트폴리오 사이트입니다.
 
+## 포함된 프로젝트
+
+| 프로젝트 | 설명 |
+| --- | --- |
+| 말차몰 | 말차를 주제로 한 쇼핑몰 형태의 웹사이트 |
+| 하늘학원 | 학원 홈페이지 형태의 웹사이트 |
+| Bokshil Café | 감성 카페 랜딩 페이지 |
+| 식당 키오스크 | 식당 키오스크 웹 애플리케이션 |
+
 ## 기능
 
 * Hero 섹션 (이름, 소개, GitHub / Projects 버튼)
@@ -51,16 +60,3 @@ open index.html
 3. 저장소 **Settings → Pages**에서 Source를 `Deploy from a branch`로 설정합니다.
 4. Branch를 `main`, Folder를 `/ (root)`로 선택 후 Save합니다.
 5. 배포가 완료되면 `https://<username>.github.io/portfolio/`에서 확인할 수 있습니다.
-
-## 포함된 프로젝트
-
-| 프로젝트 | 설명 |
-| --- | --- |
-| 말차몰 | 말차를 주제로 한 쇼핑몰 형태의 웹사이트 |
-| 하늘학원 | 학원 홈페이지 형태의 웹사이트 |
-| Bokshil Café | 감성 카페 랜딩 페이지 |
-| 식당 키오스크 | 식당 키오스크 웹 애플리케이션 |
-
-## 링크
-
-* GitHub: https://github.com/lakekimhandsome
