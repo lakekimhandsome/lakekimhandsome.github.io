@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="김호수 — 고등학생 개발자 포트폴리오. HTML, CSS, JavaScript로 제작한 웹 프로젝트를 소개합니다.">
+  <title>김호수 | Portfolio</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="logo">Lake Kim</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-content reveal">
+          <p class="hero-greeting">안녕하세요, 저는</p>
+          <h1 class="hero-name">김호수<span class="hero-cursor" aria-hidden="true">|</span></h1>
+          <p class="hero-role">고등학생 개발자</p>
+          <p class="hero-desc">
+            HTML, CSS, JavaScript를 활용해<br class="hero-br">
+            다양한 웹 프로젝트를 제작하고 있습니다.
+          </p>
+          <div class="hero-actions">
+            <a href="https://github.com/lakekimhandsome" class="btn btn-primary" target="_blank"
+              rel="noopener noreferrer">
+              <svg class="btn-icon" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+              GitHub
+            </a>
+            <a href="#projects" class="btn btn-outline">Projects 보기</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal" aria-hidden="true">
+          <div class="code-window">
+            <div class="code-window-header">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+            </div>
+            <pre class="code-window-body"><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
+  <span class="code-prop">name</span>: <span class="code-string">"김호수"</span>,
+  <span class="code-prop">role</span>: <span class="code-string">"고등학생 개발자"</span>,
+  <span class="code-prop">skills</span>: [<span class="code-string">"HTML"</span>, <span class="code-string">"CSS"</span>, <span class="code-string">"JS"</span>],
+  <span class="code-prop">passion</span>: <span class="code-string">"웹 개발"</span>
+};</code></pre>
+          </div>
+        </div>
+      </div>
+      <a href="#projects" class="scroll-indicator" aria-label="Projects 섹션으로 이동">
+        <span></span>
+      </a>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-label">Projects</p>
+          <h2 class="section-title">제작한 프로젝트</h2>
+          <p class="section-desc">HTML, CSS, JavaScript로 구현한 웹 프로젝트 모음입니다.</p>
+        </header>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-card-top">
+              <div class="project-icon" aria-hidden="true">🍵</div>
+              <h3 class="project-name">말차몰</h3>
+              <p class="project-desc">말차를 주제로 한 쇼핑몰 형태의 웹사이트</p>
+            </div>
+            <div class="project-card-actions">
+              <a href="https://lakekimhandsome.github.io/matcha-mall/" class="btn btn-sm btn-primary" target="_blank"
+                rel="noopener noreferrer">Live Demo</a>
+              <a href="https://github.com/lakekimhandsome/matcha-mall" class="btn btn-sm btn-ghost" target="_blank"
+                rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card-top">
+              <div class="project-icon" aria-hidden="true">📚</div>
+              <h3 class="project-name">하늘학원</h3>
+              <p class="project-desc">학원 홈페이지 형태의 웹사이트</p>
+            </div>
+            <div class="project-card-actions">
+              <a href="https://lakekimhandsome.github.io/academy-website/" class="btn btn-sm btn-primary"
+                target="_blank" rel="noopener noreferrer">Live Demo</a>
+              <a href="https://github.com/lakekimhandsome/academy-website" class="btn btn-sm btn-ghost"
+                target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card-top">
+              <div class="project-icon" aria-hidden="true">☕</div>
+              <h3 class="project-name">Bokshil Café</h3>
+              <p class="project-desc">감성 카페 랜딩 페이지</p>
+            </div>
+            <div class="project-card-actions">
+              <a href="https://lakekimhandsome.github.io/bokshil-cafe/" class="btn btn-sm btn-primary" target="_blank"
+                rel="noopener noreferrer">Live Demo</a>
+              <a href="https://github.com/lakekimhandsome/bokshil-cafe" class="btn btn-sm btn-ghost" target="_blank"
+                rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-card-top">
+              <div class="project-icon" aria-hidden="true">🍽️</div>
+              <h3 class="project-name">식당 키오스크</h3>
+              <p class="project-desc">식당 키오스크 웹 애플리케이션</p>
+            </div>
+            <div class="project-card-actions">
+              <a href="https://lakekimhandsome.github.io/restaurant-kiosk/" class="btn btn-sm btn-primary"
+                target="_blank" rel="noopener noreferrer">Live Demo</a>
+              <a href="https://github.com/lakekimhandsome/restaurant-kiosk" class="btn btn-sm btn-ghost"
+                target="_blank" rel="noopener noreferrer">GitHub</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-label">Skills</p>
+          <h2 class="section-title">기술 스택</h2>
+          <p class="section-desc">웹 개발에 사용하는 기술과 도구입니다.</p>
+        </header>
+        <div class="skills-grid">
+          <div class="skill-card reveal">
+            <span class="skill-icon" aria-hidden="true">&lt;/&gt;</span>
+            <h3 class="skill-name">HTML</h3>
+          </div>
+          <div class="skill-card reveal">
+            <span class="skill-icon" aria-hidden="true">{ }</span>
+            <h3 class="skill-name">CSS</h3>
+          </div>
+          <div class="skill-card reveal">
+            <span class="skill-icon" aria-hidden="true">JS</span>
+            <h3 class="skill-name">JavaScript</h3>
+          </div>
+          <div class="skill-card reveal">
+            <span class="skill-icon" aria-hidden="true">⎇</span>
+            <h3 class="skill-name">Git</h3>
+          </div>
+          <div class="skill-card reveal">
+            <span class="skill-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+              </svg>
+            </span>
+            <h3 class="skill-name">GitHub</h3>
+          </div>
+          <div class="skill-card reveal">
+            <span class="skill-icon" aria-hidden="true">📱</span>
+            <h3 class="skill-name">Responsive Web Design</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <header class="section-header reveal">
+            <p class="section-label">About</p>
+            <h2 class="section-title">저에 대해</h2>
+          </header>
+          <div class="about-content reveal">
+            <ul class="about-list">
+              <li>
+                <span class="about-marker" aria-hidden="true"></span>
+                고등학생 개발자
+              </li>
+              <li>
+                <span class="about-marker" aria-hidden="true"></span>
+                웹 개발과 프로그래밍에 관심이 많음
+              </li>
+              <li>
+                <span class="about-marker" aria-hidden="true"></span>
+                사용자 경험을 고려한 웹사이트 제작을 좋아함
+              </li>
+              <li>
+                <span class="about-marker" aria-hidden="true"></span>
+                새로운 기술을 배우고 프로젝트로 구현하는 것을 즐김
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="section-label">Contact</p>
+          <h2 class="section-title">연락하기</h2>
+          <p class="section-desc">프로젝트나 협업에 관심이 있으시다면 GitHub에서 연락해 주세요.</p>
+        </header>
+        <div class="contact-card reveal">
+          <div class="contact-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
+            </svg>
+          </div>
+          <div class="contact-info">
+            <p class="contact-label">GitHub</p>
+            <a href="https://github.com/lakekimhandsome" class="contact-link" target="_blank"
+              rel="noopener noreferrer">github.com/lakekimhandsome</a>
+          </div>
+          <a href="https://github.com/lakekimhandsome" class="btn btn-primary" target="_blank"
+            rel="noopener noreferrer">프로필 방문하기</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-copy">&copy; 2026 Lake Kim</p>
+      <p class="footer-credit">Designed &amp; Developed by Lake Kim</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
