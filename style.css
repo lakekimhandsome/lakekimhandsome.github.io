@@ -291,6 +291,7 @@ button {
   border-radius: var(--radius-lg);
   overflow: hidden;
   box-shadow: var(--shadow);
+  text-align: left;
 }
 
 .code-window-header {
@@ -299,6 +300,7 @@ button {
   padding: 0.875rem 1rem;
   background: rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid var(--border);
+  justify-content: flex-start;
 }
 
 .dot {
@@ -325,6 +327,14 @@ button {
   font-size: 0.875rem;
   line-height: 1.7;
   overflow-x: auto;
+  text-align: left;
+  direction: ltr;
+  white-space: pre;
+}
+
+.code-window-body code {
+  display: block;
+  text-align: left;
 }
 
 .code-keyword {
@@ -553,6 +563,12 @@ button {
 }
 
 /* ===== Contact ===== */
+.contact-cards {
+  display: grid;
+  gap: 1rem;
+  max-width: 640px;
+}
+
 .contact-card {
   display: flex;
   align-items: center;
@@ -614,22 +630,27 @@ button {
 }
 
 /* ===== Footer ===== */
-.footer {
-  padding: 2.5rem 0;
+.site-footer {
+  margin-top: 0;
+  padding: 24px 20px;
   border-top: 1px solid var(--border);
+  text-align: center;
 }
 
-.footer-inner {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 0.5rem;
-}
-
-.footer-copy,
-.footer-credit {
-  font-size: 0.875rem;
+.site-footer__copy {
+  font-size: 0.75rem;
   color: var(--text-muted);
+}
+
+.site-footer__copy a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color var(--transition);
+}
+
+.site-footer__copy a:hover {
+  color: var(--accent);
 }
 
 /* ===== Responsive ===== */
@@ -650,8 +671,10 @@ button {
 
   .hero-visual {
     order: -1;
+    width: 100%;
     max-width: 420px;
     margin-inline: auto;
+    text-align: left;
   }
 
   .hero-br {
@@ -722,11 +745,6 @@ button {
   .contact-card {
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  .footer-inner {
-    flex-direction: column;
-    text-align: center;
   }
 
   .scroll-indicator {
