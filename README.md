@@ -56,12 +56,11 @@ open index.html
 
 | 프로젝트 | 설명 |
 | --- | --- |
-| Matcha Mall | 말차를 주제로 한 쇼핑몰 형태의 웹사이트 |
-| Academy Website | 학원 홈페이지 형태의 웹사이트 |
-| Bokshil Cafe | 감성 카페 랜딩 페이지 |
-| Restaurant Kiosk | 식당 키오스크 웹 애플리케이션 |
+| 말차몰 | 말차를 주제로 한 쇼핑몰 형태의 웹사이트 |
+| 하늘학원 | 학원 홈페이지 형태의 웹사이트 |
+| Bokshil Café | 감성 카페 랜딩 페이지 |
+| 식당 키오스크 | 식당 키오스크 웹 애플리케이션 |
 
 ## 링크
 
 * GitHub: https://github.com/lakekimhandsome
-# [README_TITLE]
