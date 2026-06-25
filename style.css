@@ -469,6 +469,18 @@ button {
   border-bottom: 1px solid var(--border);
 }
 
+.project-image-link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.project-image-link:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: -2px;
+}
+
 .project-image {
   width: 100%;
   height: 100%;
