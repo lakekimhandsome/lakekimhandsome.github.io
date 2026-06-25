@@ -542,10 +542,20 @@ button {
   border-radius: var(--radius);
 }
 
+.skill-icon svg,
+.skill-icon svg * {
+  fill: var(--accent);
+}
+
 .skill-icon svg {
   width: 1.5rem;
   height: 1.5rem;
-  fill: var(--accent);
+}
+
+.skill-icon--devices svg {
+  display: block;
+  width: 1.75rem;
+  height: 1.1375rem;
 }
 
 .skill-name {
@@ -647,8 +657,29 @@ button {
   transition: color var(--transition);
 }
 
+.contact-link--copy {
+  cursor: pointer;
+  border: none;
+  background: none;
+  padding: 0;
+  font: inherit;
+  text-align: left;
+}
+
+.contact-link--copy.is-copied {
+  color: var(--text-muted);
+}
+
 .contact-link:hover {
   color: var(--accent-hover);
+}
+
+.contact-card .btn {
+  box-shadow: none;
+}
+
+.contact-card .btn:hover {
+  box-shadow: none;
 }
 
 /* ===== Footer ===== */

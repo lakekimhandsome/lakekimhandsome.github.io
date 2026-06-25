@@ -82,4 +82,56 @@
   });
 
   initScrollReveal();
+  initEmailCopy();
+
+  function initEmailCopy() {
+    var copyBtn = document.querySelector(".contact-link--copy");
+    if (!copyBtn) return;
+
+    var originalText = copyBtn.textContent;
+    var resetTimer;
+
+    function showCopied() {
+      copyBtn.textContent = "복사 완료!";
+      copyBtn.classList.add("is-copied");
+      clearTimeout(resetTimer);
+      resetTimer = setTimeout(function () {
+        copyBtn.textContent = originalText;
+        copyBtn.classList.remove("is-copied");
+      }, 2000);
+    }
+
+    function fallbackCopy(email) {
+      var textarea = document.createElement("textarea");
+      textarea.value = email;
+      textarea.setAttribute("readonly", "");
+      textarea.style.position = "fixed";
+      textarea.style.opacity = "0";
+      document.body.appendChild(textarea);
+      textarea.select();
+
+      try {
+        if (document.execCommand("copy")) {
+          showCopied();
+        }
+      } catch (err) {
+        /* ignore */
+      }
+
+      document.body.removeChild(textarea);
+    }
+
+    copyBtn.addEventListener("click", function () {
+      var email = copyBtn.getAttribute("data-email") || originalText.trim();
+
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(email).then(showCopied).catch(function () {
+          fallbackCopy(email);
+        });
+        return;
+      }
+
+      fallbackCopy(email);
+    });
+  }
 })();
