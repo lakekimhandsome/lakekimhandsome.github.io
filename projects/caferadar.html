@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CafeRadar 프로젝트 상세 — 카페 근무 환경 후기·구인 커뮤니티 서비스">
+  <title>CafeRadar | Project Detail</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-detail">
+  <header class="header scrolled" id="header">
+    <nav class="nav container">
+      <a href="../index.html" class="logo logo--link">Lake Kim</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#skills">Skills</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-label="메뉴 열기" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="detail-hero">
+      <div class="container detail-hero-inner reveal">
+        <a href="../index.html#projects" class="detail-back">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+          </svg>
+          프로젝트 목록으로
+        </a>
+        <div class="detail-header">
+          <h1 class="detail-title">CafeRadar</h1>
+          <span class="project-badge project-badge--live">실제 서비스</span>
+        </div>
+        <p class="detail-summary">카페 근무 환경 후기와 구인·구직 정보를 공유하는 커뮤니티형 웹 서비스입니다.</p>
+        <div class="detail-actions">
+          <a href="https://lakekimhandsome.github.io/caferadar/" class="btn btn-primary" target="_blank"
+            rel="noopener noreferrer">페이지 방문</a>
+          <a href="https://github.com/lakekimhandsome/caferadar" class="btn btn-outline" target="_blank"
+            rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-content">
+      <div class="container detail-grid">
+        <article class="detail-block reveal">
+          <h2 class="detail-block-title">프로젝트 소개</h2>
+          <p class="detail-text">CafeRadar는 카페에서 일해본 사람들이 근무 환경 후기를 남기고, 카페에서 일하려는 사람들이 참고할 수 있는 커뮤니티 서비스입니다. 회원 인증, 후기 작성, 구인글 등록, 검색 기능을 Supabase와 연동해 구현했습니다.</p>
+        </article>
+
+        <article class="detail-block reveal">
+          <h2 class="detail-block-title">프로젝트 목적</h2>
+          <p class="detail-text">카페 알바를 구할 때 실제 근무 환경 정보를 미리 확인할 수 있는 플랫폼을 만드는 것이 목표였습니다. 단순 정보 제공을 넘어 회원 기반의 후기 작성과 구인·구직 정보 공유가 가능한 실사용 서비스를 구현하고자 했습니다.</p>
+        </article>
+
+        <article class="detail-block reveal">
+          <h2 class="detail-block-title">사용 기술</h2>
+          <ul class="detail-tech">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>Supabase</li>
+          </ul>
+        </article>
+
+        <article class="detail-block reveal">
+          <h2 class="detail-block-title">주요 기능</h2>
+          <ul class="detail-list">
+            <li><span class="detail-list-marker" aria-hidden="true"></span>이메일·비밀번호 기반 회원가입 및 로그인</li>
+            <li><span class="detail-list-marker" aria-hidden="true"></span>카페 근무 후기 작성·조회·검색</li>
+            <li><span class="detail-list-marker" aria-hidden="true"></span>구인·구직 글 등록 및 검색</li>
+            <li><span class="detail-list-marker" aria-hidden="true"></span>마이페이지에서 내 후기 관리</li>
+            <li><span class="detail-list-marker" aria-hidden="true"></span>모바일 반응형 UI</li>
+          </ul>
+        </article>
+
+        <article class="detail-block reveal">
+          <h2 class="detail-block-title">구현 과정</h2>
+          <ul class="detail-list">
+            <li><span class="detail-list-marker" aria-hidden="true"></span>서비스 흐름과 화면 구조를 설계한 뒤 메인 UI를 제작했습니다.</li>
+            <li><span class="detail-list-marker" aria-hidden="true"></span>Supabase Auth와 PostgreSQL 테이블, RLS 정책을 설정했습니다.</li>
+            <li><span class="detail-list-marker" aria-hidden="true"></span>모듈형 JavaScript로 인증, 후기, 구인 기능을 분리해 구현했습니다.</li>
+            <li><span class="detail-list-marker" aria-hidden="true"></span>검색, 필터, 모달 UI를 추가하며 사용성을 개선했습니다.</li>
+            <li><span class="detail-list-marker" aria-hidden="true"></span>GitHub Pages에 배포해 실제 접속 가능한 서비스로 공개했습니다.</li>
+          </ul>
+        </article>
+
+        <article class="detail-block reveal">
+          <h2 class="detail-block-title">문제 해결 과정</h2>
+          <ul class="detail-list">
+            <li><span class="detail-list-marker" aria-hidden="true"></span>RLS 정책 미적용으로 데이터 접근 오류가 발생해 SQL 마이그레이션으로 정책을 재정비했습니다.</li>
+            <li><span class="detail-list-marker" aria-hidden="true"></span>회원 탈퇴 시 연관 데이터 삭제를 RPC 함수로 처리해 안정성을 높였습니다.</li>
+            <li><span class="detail-list-marker" aria-hidden="true"></span>GitHub Pages 환경에서 Supabase Auth redirect URL을 맞추며 배포 이슈를 해결했습니다.</li>
+          </ul>
+        </article>
+
+        <article class="detail-block reveal">
+          <h2 class="detail-block-title">배운 점</h2>
+          <ul class="detail-list">
+            <li><span class="detail-list-marker" aria-hidden="true"></span>인증, DB, RLS를 포함한 풀스택형 웹 서비스 구조</li>
+            <li><span class="detail-list-marker" aria-hidden="true"></span>기능별 JS 모듈 분리와 유지보수 방법</li>
+            <li><span class="detail-list-marker" aria-hidden="true"></span>실제 사용자 흐름을 고려한 UI·UX 설계</li>
+          </ul>
+        </article>
+
+        <article class="detail-block reveal">
+          <h2 class="detail-block-title">스크린샷 갤러리</h2>
+          <p class="detail-text" style="margin-bottom: 1.25rem;">이미지를 클릭하면 크게 볼 수 있습니다.</p>
+          <div class="gallery-grid">
+            <button type="button" class="gallery-item" data-lightbox-src="../images/projects/caferadar/01-main.png"
+              data-lightbox-caption="메인 페이지">
+              <div class="gallery-item__media">
+                <img src="../images/projects/caferadar/01-main.png" alt="메인 페이지" loading="lazy">
+              </div>
+              <span class="gallery-item__caption">메인 페이지</span>
+            </button>
+            <button type="button" class="gallery-item" data-lightbox-src="../images/projects/caferadar/02-signup.png"
+              data-lightbox-caption="회원가입">
+              <div class="gallery-item__media">
+                <img src="../images/projects/caferadar/02-signup.png" alt="회원가입" loading="lazy">
+              </div>
+              <span class="gallery-item__caption">회원가입</span>
+            </button>
+            <button type="button" class="gallery-item" data-lightbox-src="../images/projects/caferadar/03-login.png"
+              data-lightbox-caption="로그인">
+              <div class="gallery-item__media">
+                <img src="../images/projects/caferadar/03-login.png" alt="로그인" loading="lazy">
+              </div>
+              <span class="gallery-item__caption">로그인</span>
+            </button>
+            <button type="button" class="gallery-item"
+              data-lightbox-src="../images/projects/caferadar/04-review-write.png" data-lightbox-caption="후기 작성">
+              <div class="gallery-item__media">
+                <img src="../images/projects/caferadar/04-review-write.png" alt="후기 작성" loading="lazy">
+              </div>
+              <span class="gallery-item__caption">후기 작성</span>
+            </button>
+            <button type="button" class="gallery-item" data-lightbox-src="../images/projects/caferadar/05-jobs.png"
+              data-lightbox-caption="구인/구직">
+              <div class="gallery-item__media">
+                <img src="../images/projects/caferadar/05-jobs.png" alt="구인/구직" loading="lazy">
+              </div>
+              <span class="gallery-item__caption">구인/구직</span>
+            </button>
+            <button type="button" class="gallery-item" data-lightbox-src="../images/projects/caferadar/06-mobile.png"
+              data-lightbox-caption="모바일 화면">
+              <div class="gallery-item__media">
+                <img src="../images/projects/caferadar/06-mobile.png" alt="모바일 화면" loading="lazy">
+              </div>
+              <span class="gallery-item__caption">모바일 화면</span>
+            </button>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="site-footer__copy">Developed by Lake Kim | GitHub: <a href="https://github.com/lakekimhandsome" target="_blank" rel="noopener noreferrer">lakekimhandsome</a> | <a href="mailto:joshualakekim@gmail.com">joshualakekim@gmail.com</a></p>
+  </footer>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="스크린샷 확대 보기">
+    <div class="lightbox__backdrop"></div>
+    <button type="button" class="lightbox__close" aria-label="닫기">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M18.3 5.71 12 12l6.3 6.29-1.41 1.42L10.59 13.4 4.29 19.71 2.88 18.3 9.17 12 2.88 5.71 4.29 4.29 10.59 10.6l6.3-6.31z" />
+      </svg>
+    </button>
+    <button type="button" class="lightbox__prev" aria-label="이전">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+      </svg>
+    </button>
+    <button type="button" class="lightbox__next" aria-label="다음">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6z" />
+      </svg>
+    </button>
+    <div class="lightbox__dialog">
+      <figure class="lightbox__figure">
+        <img class="lightbox__image" src="" alt="">
+      </figure>
+      <p class="lightbox__caption"></p>
+    </div>
+  </div>
+
+  <script src="../script.js"></script>
+  <script src="../project-detail.js"></script>
+</body>
+
+</html>

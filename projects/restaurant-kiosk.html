@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="식당 키오스크 프로젝트 상세">
+  <title>식당 키오스크 | Project Detail</title>
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body class="page-detail">
+  <header class="header scrolled" id="header">
+    <nav class="nav container">
+      <a href="../index.html" class="logo logo--link">Lake Kim</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../index.html#projects">Projects</a></li>
+        <li><a href="../index.html#skills">Skills</a></li>
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-label="메뉴 열기" aria-expanded="false"><span></span><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="detail-hero">
+      <div class="container detail-hero-inner reveal">
+        <a href="../index.html#projects" class="detail-back"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z" /></svg>프로젝트 목록으로</a>
+        <div class="detail-header">
+          <h1 class="detail-title">식당 키오스크</h1>
+          <span class="project-badge project-badge--sample">예시</span>
+        </div>
+        <p class="detail-summary">메뉴 선택과 주문 흐름을 체험할 수 있는 식당 키오스크 예시 웹 애플리케이션입니다.</p>
+        <div class="detail-actions">
+          <a href="https://lakekimhandsome.github.io/restaurant-kiosk/" class="btn btn-primary" target="_blank" rel="noopener noreferrer">페이지 방문</a>
+          <a href="https://github.com/lakekimhandsome/restaurant-kiosk" class="btn btn-outline" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-content">
+      <div class="container detail-grid">
+        <article class="detail-block reveal"><h2 class="detail-block-title">프로젝트 소개</h2><p class="detail-text">식당 키오스크처럼 메뉴를 선택하고 장바구니에 담아 주문하는 흐름을 구현한 예시 프로젝트입니다. 터치 친화적인 UI를 목표로 제작했습니다.</p></article>
+        <article class="detail-block reveal"><h2 class="detail-block-title">프로젝트 목적</h2><p class="detail-text">키오스크 UI의 메뉴 선택, 옵션 추가, 주문 확인 같은 실사용 흐름을 웹으로 구현하며 인터랙션 설계를 연습하는 것이 목적이었습니다.</p></article>
+        <article class="detail-block reveal"><h2 class="detail-block-title">사용 기술</h2><ul class="detail-tech"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></article>
+        <article class="detail-block reveal"><h2 class="detail-block-title">주요 기능</h2><ul class="detail-list"><li><span class="detail-list-marker" aria-hidden="true"></span>메뉴 카테고리 및 상품 선택</li><li><span class="detail-list-marker" aria-hidden="true"></span>장바구니 및 주문 확인</li><li><span class="detail-list-marker" aria-hidden="true"></span>터치하기 쉬운 큰 버튼 UI</li></ul></article>
+        <article class="detail-block reveal"><h2 class="detail-block-title">구현 과정</h2><ul class="detail-list"><li><span class="detail-list-marker" aria-hidden="true"></span>키오스크 화면 흐름을 설계하고 UI를 구성했습니다.</li><li><span class="detail-list-marker" aria-hidden="true"></span>메뉴 데이터와 장바구니 상태를 JavaScript로 관리했습니다.</li><li><span class="detail-list-marker" aria-hidden="true"></span>주문 확인 화면과 초기화 기능을 추가했습니다.</li></ul></article>
+        <article class="detail-block reveal"><h2 class="detail-block-title">문제 해결 과정</h2><ul class="detail-list"><li><span class="detail-list-marker" aria-hidden="true"></span>장바구니 합계 계산 로직을 정리해 오류를 줄였습니다.</li><li><span class="detail-list-marker" aria-hidden="true"></span>작은 화면에서 버튼 크기와 간격을 조정해 사용성을 개선했습니다.</li></ul></article>
+        <article class="detail-block reveal"><h2 class="detail-block-title">배운 점</h2><ul class="detail-list"><li><span class="detail-list-marker" aria-hidden="true"></span>키오스크형 UI의 사용자 흐름 설계</li><li><span class="detail-list-marker" aria-hidden="true"></span>상태 기반 UI 업데이트 방법</li></ul></article>
+        <article class="detail-block reveal"><h2 class="detail-block-title">스크린샷 갤러리</h2><div class="gallery-grid"><button type="button" class="gallery-item" data-lightbox-src="../images/projects/restaurant-kiosk.png" data-lightbox-caption="메인 페이지"><div class="gallery-item__media"><img src="../images/projects/restaurant-kiosk.png" alt="메인 페이지" loading="lazy"></div><span class="gallery-item__caption">메인 페이지</span></button></div></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p class="site-footer__copy">Developed by Lake Kim | GitHub: <a href="https://github.com/lakekimhandsome" target="_blank" rel="noopener noreferrer">lakekimhandsome</a> | <a href="mailto:joshualakekim@gmail.com">joshualakekim@gmail.com</a></p></footer>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="스크린샷 확대 보기">
+    <div class="lightbox__backdrop"></div>
+    <button type="button" class="lightbox__close" aria-label="닫기"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.3 5.71 12 12l6.3 6.29-1.41 1.42L10.59 13.4 4.29 19.71 2.88 18.3 9.17 12 2.88 5.71 4.29 4.29 10.59 10.6l6.3-6.31z" /></svg></button>
+    <button type="button" class="lightbox__prev" aria-label="이전"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z" /></svg></button>
+    <button type="button" class="lightbox__next" aria-label="다음"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6z" /></svg></button>
+    <div class="lightbox__dialog"><figure class="lightbox__figure"><img class="lightbox__image" src="" alt=""></figure><p class="lightbox__caption"></p></div>
+  </div>
+
+  <script src="../script.js"></script>
+  <script src="../project-detail.js"></script>
+</body>
+</html>
