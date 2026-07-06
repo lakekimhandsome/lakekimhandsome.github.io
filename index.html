@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="김호수 — 고등학생 개발자 포트폴리오. HTML, CSS, JavaScript로 제작한 웹 프로젝트를 소개합니다.">
-  <title>김호수 | Portfolio</title>
+  <meta name="description" content="Lake Kim — 카페, 학원, 식당 등 소상공인을 위한 맞춤 웹사이트 제작 서비스. 기획부터 배포, 유지보수까지 책임집니다.">
+  <title>Lake Kim | 웹사이트 제작</title>
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,8 +21,8 @@
       <a href="#" class="logo">Lake Kim</a>
       <ul class="nav-links" id="nav-links">
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#why-website">Why Website</a></li>
+        <li><a href="#process">Process</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <button type="button" class="nav-toggle" id="nav-toggle" aria-label="메뉴 열기" aria-expanded="false">
@@ -38,16 +38,16 @@
       <div class="hero-bg" aria-hidden="true"></div>
       <div class="container hero-inner">
         <div class="hero-content reveal">
-          <p class="hero-greeting">안녕하세요, 저는</p>
-          <h1 class="hero-name">김호수<span class="hero-cursor" aria-hidden="true">|</span></h1>
-          <p class="hero-role">고등학생 개발자</p>
+          <p class="hero-greeting">사장님, 온라인에서</p>
+          <h1 class="hero-name">Lake Kim<span class="hero-cursor" aria-hidden="true">|</span></h1>
+          <p class="hero-role">맞춤 웹사이트 제작</p>
           <p class="hero-desc">
-            HTML, CSS, JavaScript를 활용해<br class="hero-br">
-            다양한 웹 프로젝트를 제작하고 있습니다.
+            카페, 학원, 식당 등 소상공인을 위한<br class="hero-br">
+            웹사이트를 기획부터 배포까지 책임집니다.
           </p>
           <div class="hero-actions">
-            <a href="#contact" class="btn btn-primary">문의하기</a>
-            <a href="#projects" class="btn btn-outline">프로젝트들 보기</a>
+            <a href="#contact" class="btn btn-primary">무료 상담 문의</a>
+            <a href="#projects" class="btn btn-outline">제작 사례 보기</a>
           </div>
         </div>
         <div class="hero-visual reveal" aria-hidden="true">
@@ -57,11 +57,11 @@
               <span class="dot dot-yellow"></span>
               <span class="dot dot-green"></span>
             </div>
-            <pre class="code-window-body"><code><span class="code-keyword">const</span> <span class="code-var">developer</span> = {
-  <span class="code-prop">name</span>: <span class="code-string">"김호수"</span>,
-  <span class="code-prop">role</span>: <span class="code-string">"고등학생 개발자"</span>,
-  <span class="code-prop">skills</span>: [<span class="code-string">"HTML"</span>, <span class="code-string">"CSS"</span>, <span class="code-string">"JS"</span>],
-  <span class="code-prop">passion</span>: <span class="code-string">"웹 개발"</span>
+            <pre class="code-window-body"><code><span class="code-keyword">const</span> <span class="code-var">website</span> = {
+  <span class="code-prop">for</span>: <span class="code-string">"카페 · 학원 · 식당"</span>,
+  <span class="code-prop">service</span>: <span class="code-string">"맞춤 제작"</span>,
+  <span class="code-prop">includes</span>: [<span class="code-string">"기획"</span>, <span class="code-string">"디자인"</span>, <span class="code-string">"개발"</span>, <span class="code-string">"배포"</span>],
+  <span class="code-prop">support</span>: <span class="code-string">"유지보수"</span>
 };</code></pre>
           </div>
         </div>
@@ -75,11 +75,14 @@
       <div class="container">
         <header class="section-header reveal">
           <p class="section-label">Projects</p>
-          <h2 class="section-title">제작한 프로젝트들</h2>
-          <p class="section-desc">HTML, CSS, JavaScript로 구현한 웹 프로젝트 모음입니다.</p>
+          <h2 class="section-title">제작 사례</h2>
+          <p class="section-desc">실제 운영 중인 서비스와 업종별 예시 작업물입니다. 사장님 가게에 맞게 맞춤 제작해 드립니다.</p>
         </header>
+
+        <div class="projects-category">
+          <h3 class="projects-category-title reveal">웹 서비스</h3>
         <div class="projects-featured">
-          <h3 class="projects-subtitle reveal">Featured</h3>
+          <h4 class="projects-subtitle reveal">Featured</h4>
           <div class="projects-featured-grid">
             <article class="project-card project-card--featured reveal">
               <div class="project-card-media">
@@ -261,44 +264,72 @@
             </div>
           </article>
         </div>
+        </div>
+
+        <div class="projects-category">
+          <h3 class="projects-category-title reveal">모바일 앱</h3>
+          <div class="projects-grid">
+            <article class="project-card reveal">
+              <div class="project-card-media project-card-media--mobile">
+                <a href="projects/workout-journal" class="project-image-link" aria-label="운동일지 상세 보기">
+                  <img src="images/projects/workout-journal.png" alt="운동일지 앱 미리보기" class="project-image"
+                    loading="lazy" width="640" height="360">
+                </a>
+              </div>
+              <div class="project-card-top">
+                <div class="project-card-header">
+                  <h3 class="project-name">운동일지</h3>
+                  <span class="project-badge project-badge--mobile">iOS 앱</span>
+                </div>
+                <p class="project-desc">메모 앱보다 빠르게 운동을 기록하는 iOS 운동일지 앱</p>
+                <ul class="project-tech" aria-label="사용 기술">
+                  <li>React</li>
+                  <li>TypeScript</li>
+                  <li>Capacitor</li>
+                  <li>iOS</li>
+                </ul>
+              </div>
+              <div class="project-card-actions">
+                <a href="projects/workout-journal" class="btn btn-sm btn-outline">상세 보기</a>
+                <a href="https://github.com/lakekimhandsome/workout-journal" class="btn btn-sm btn-ghost" target="_blank"
+                  rel="noopener noreferrer">GitHub</a>
+              </div>
+            </article>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section section-alt" id="skills">
+    <section class="section section-alt" id="why-website">
       <div class="container">
         <header class="section-header reveal">
-          <p class="section-label">Skills</p>
-          <h2 class="section-title">기술 스택</h2>
-          <p class="section-desc">웹 개발에 사용하는 기술과 도구입니다.</p>
+          <p class="section-label">Why Website</p>
+          <h2 class="section-title">왜 웹사이트가 필요할까요?</h2>
+          <p class="section-desc">인스타그램만으로는 부족합니다. 웹사이트는 사장님 가게의 공식 온라인 매장입니다.</p>
         </header>
-        <div class="skills-grid">
-          <div class="skill-card reveal">
-            <span class="skill-icon" aria-hidden="true">&lt;/&gt;</span>
-            <h3 class="skill-name">HTML</h3>
-          </div>
-          <div class="skill-card reveal">
-            <span class="skill-icon" aria-hidden="true">{ }</span>
-            <h3 class="skill-name">CSS</h3>
-          </div>
-          <div class="skill-card reveal">
-            <span class="skill-icon" aria-hidden="true">JS</span>
-            <h3 class="skill-name">JavaScript</h3>
-          </div>
-          <div class="skill-card reveal">
-            <span class="skill-icon" aria-hidden="true">⎇</span>
-            <h3 class="skill-name">Git</h3>
-          </div>
-          <div class="skill-card reveal">
-            <span class="skill-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" aria-hidden="true">
-                <path
-                  d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z" />
-              </svg>
-            </span>
-            <h3 class="skill-name">GitHub</h3>
-          </div>
-          <div class="skill-card reveal">
-            <span class="skill-icon skill-icon--devices" aria-hidden="true">
+        <div class="why-grid">
+          <article class="why-card reveal">
+            <span class="why-icon" aria-hidden="true">24h</span>
+            <h3 class="why-title">24시간 영업</h3>
+            <p class="why-desc">영업시간이 끝나도 고객이 메뉴, 가격, 위치를 확인할 수 있습니다. 잠든 시간에도 가게를 홍보하세요.</p>
+          </article>
+          <article class="why-card reveal">
+            <span class="why-icon" aria-hidden="true">✦</span>
+            <h3 class="why-title">신뢰와 첫인상</h3>
+            <p class="why-desc">깔끔한 웹사이트는 전문성과 신뢰를 보여줍니다. 처음 방문하는 고객에게 좋은 인상을 남깁니다.</p>
+          </article>
+          <article class="why-card reveal">
+            <span class="why-icon" aria-hidden="true">SEO</span>
+            <h3 class="why-title">검색 노출</h3>
+            <p class="why-desc">네이버·구글 검색에 등록하면 "근처 ○○"를 찾는 고객이 가게를 발견할 수 있습니다.</p>
+          </article>
+          <article class="why-card reveal">
+            <span class="why-icon" aria-hidden="true">≡</span>
+            <h3 class="why-title">정보 한곳에 정리</h3>
+            <p class="why-desc">메뉴, 가격, 영업시간, 주차 안내 등 자주 묻는 질문을 웹사이트에 모아 전화 문의를 줄일 수 있습니다.</p>
+          </article>
+          <article class="why-card reveal">
+            <span class="why-icon why-icon--devices" aria-hidden="true">
               <svg viewBox="0 0 20 13" aria-hidden="true">
                 <g transform="translate(1.875, 2.875)">
                   <rect x="0" y="1.5" width="7" height="4.5" rx="0.75" />
@@ -309,40 +340,81 @@
                 </g>
               </svg>
             </span>
-            <h3 class="skill-name">반응형 웹 디자인</h3>
-          </div>
+            <h3 class="why-title">모바일 최적화</h3>
+            <p class="why-desc">스마트폰으로도 편하게 볼 수 있는 반응형 웹사이트를 제작합니다. 대부분의 고객이 모바일로 방문합니다.</p>
+          </article>
+          <article class="why-card reveal">
+            <span class="why-icon" aria-hidden="true">↑</span>
+            <h3 class="why-title">경쟁력 확보</h3>
+            <p class="why-desc">주변 업체는 이미 온라인에 있습니다. 웹사이트가 없으면 고객이 다른 곳으로 갈 수 있습니다.</p>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="about">
+    <section class="section" id="process">
       <div class="container">
-        <div class="about-grid">
-          <header class="section-header reveal">
-            <p class="section-label">About</p>
-            <h2 class="section-title">저에 대해</h2>
-          </header>
-          <div class="about-content reveal">
-            <ul class="about-list">
-              <li>
-                <span class="about-marker" aria-hidden="true"></span>
-                고등학생 개발자입니다.
-              </li>
-              <li>
-                <span class="about-marker" aria-hidden="true"></span>
-                웹 개발과 프로그래밍에 관심이 많습니다.
-              </li>
-              <li>
-                <span class="about-marker" aria-hidden="true"></span>
-                사용자 경험을 고려한 웹사이트 제작을 좋아합니다.
-              </li>
-              <li>
-                <span class="about-marker" aria-hidden="true"></span>
-                새로운 기술을 배우고 프로젝트로 구현하는 것을 즐깁니다.
-              </li>
-            </ul>
-          </div>
-        </div>
+        <header class="section-header reveal">
+          <p class="section-label">Process</p>
+          <h2 class="section-title">제작 과정</h2>
+          <p class="section-desc">상담부터 배포, 유지보수까지 6단계로 진행합니다. 중간마다 확인하며 함께 만들어 갑니다.</p>
+        </header>
+        <ol class="process-timeline">
+          <li class="process-step reveal">
+            <div class="process-step-marker" aria-hidden="true">
+              <span class="process-step-num">01</span>
+            </div>
+            <div class="process-step-body">
+              <h3 class="process-step-title">상담</h3>
+              <p class="process-step-desc">업종, 원하시는 분위기, 필요한 기능을 파악합니다. 예산과 일정도 함께 논의합니다.</p>
+            </div>
+          </li>
+          <li class="process-step reveal">
+            <div class="process-step-marker" aria-hidden="true">
+              <span class="process-step-num">02</span>
+            </div>
+            <div class="process-step-body">
+              <h3 class="process-step-title">기획</h3>
+              <p class="process-step-desc">페이지 구성, 메뉴 구조, 필요한 콘텐츠를 정리합니다. 사장님께서 준비하실 자료도 안내해 드립니다.</p>
+            </div>
+          </li>
+          <li class="process-step reveal">
+            <div class="process-step-marker" aria-hidden="true">
+              <span class="process-step-num">03</span>
+            </div>
+            <div class="process-step-body">
+              <h3 class="process-step-title">디자인 및 개발</h3>
+              <p class="process-step-desc">가게 분위기에 맞는 디자인으로 웹사이트를 제작합니다. 모바일·PC 모두 보기 좋게 만듭니다.</p>
+            </div>
+          </li>
+          <li class="process-step reveal">
+            <div class="process-step-marker" aria-hidden="true">
+              <span class="process-step-num">04</span>
+            </div>
+            <div class="process-step-body">
+              <h3 class="process-step-title">검토</h3>
+              <p class="process-step-desc">완성된 사이트를 함께 확인하고 수정 요청을 반영합니다. 만족하실 때까지 조율합니다.</p>
+            </div>
+          </li>
+          <li class="process-step reveal">
+            <div class="process-step-marker" aria-hidden="true">
+              <span class="process-step-num">05</span>
+            </div>
+            <div class="process-step-body">
+              <h3 class="process-step-title">배포</h3>
+              <p class="process-step-desc">도메인 연결과 실제 서비스 오픈을 진행합니다. 검색 엔진 등록도 도와드립니다.</p>
+            </div>
+          </li>
+          <li class="process-step reveal">
+            <div class="process-step-marker" aria-hidden="true">
+              <span class="process-step-num">06</span>
+            </div>
+            <div class="process-step-body">
+              <h3 class="process-step-title">유지보수</h3>
+              <p class="process-step-desc">오픈 후 메뉴 변경, 정보 수정 등 운영 중 필요한 업데이트를 지원합니다.</p>
+            </div>
+          </li>
+        </ol>
       </div>
     </section>
 
@@ -350,8 +422,8 @@
       <div class="container">
         <header class="section-header reveal">
           <p class="section-label">Contact</p>
-          <h2 class="section-title">연락하기</h2>
-          <p class="section-desc">프로젝트나 협업에 관심이 있으시다면 이메일 또는 GitHub으로 연락해 주세요.</p>
+          <h2 class="section-title">상담 문의</h2>
+          <p class="section-desc">웹사이트 제작이 필요하시면 편하게 연락해 주세요. 업종과 원하시는 방향만 알려주셔도 됩니다.</p>
         </header>
         <div class="contact-cards reveal">
           <div class="contact-card">

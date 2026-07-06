@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="운동일지 프로젝트 상세 — 빠르게 운동을 기록하는 iOS 앱">
+  <title>운동일지 | Project Detail</title>
+  <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../style.css">
+</head>
+
+<body class="page-detail">
+  <header class="header scrolled" id="header">
+    <nav class="nav container">
+      <a href="../../" class="logo logo--link">Lake Kim</a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="../../#projects">Projects</a></li>
+        <li><a href="../../#why-website">Why Website</a></li>
+        <li><a href="../../#process">Process</a></li>
+        <li><a href="../../#contact">Contact</a></li>
+      </ul>
+      <button type="button" class="nav-toggle" id="nav-toggle" aria-label="메뉴 열기" aria-expanded="false"><span></span><span></span><span></span></button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="detail-hero">
+      <div class="container detail-hero-inner reveal">
+        <a href="../../#projects" class="detail-back"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z" /></svg>프로젝트 목록으로</a>
+        <div class="detail-header">
+          <h1 class="detail-title">운동일지</h1>
+          <span class="project-badge project-badge--mobile">iOS 앱</span>
+        </div>
+        <p class="detail-summary">메모 앱보다 빠르게 운동을 남기기 위한 iOS 운동일지 앱입니다. 한 화면에서 세션 생성, 운동 추가, 세트 기록, 코멘트 작성까지 끝낼 수 있도록 설계했습니다.</p>
+        <div class="detail-actions">
+          <a href="https://github.com/lakekimhandsome/workout-journal" class="btn btn-outline" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="detail-content">
+      <div class="container detail-grid">
+        <article class="detail-block reveal"><h2 class="detail-block-title">프로젝트 소개</h2><p class="detail-text">운동일지는 운동 기록에 집중한 iOS 앱입니다. 복잡한 분석 기능 없이, 운동 세션을 빠르게 만들고 세트 수를 기록하는 데 필요한 기능만 담았습니다. Capacitor로 React 웹앱을 iOS 네이티브 앱으로 패키징했습니다.</p></article>
+        <article class="detail-block reveal"><h2 class="detail-block-title">프로젝트 목적</h2><p class="detail-text">기존 메모 앱으로 운동을 기록할 때 느껴지는 번거로움을 줄이는 것이 목표였습니다. 로그인 없이 바로 기록을 시작하고, 세트 추가 시 휴식 타이머가 자동으로 시작되는 등 실제 운동 중 손이 바쁠 때도 빠르게 쓸 수 있는 UX를 만들고자 했습니다.</p></article>
+        <article class="detail-block reveal"><h2 class="detail-block-title">사용 기술</h2><ul class="detail-tech"><li>React</li><li>TypeScript</li><li>Vite</li><li>Capacitor</li><li>iOS</li></ul></article>
+        <article class="detail-block reveal"><h2 class="detail-block-title">주요 기능</h2><ul class="detail-list"><li><span class="detail-list-marker" aria-hidden="true"></span>한 화면에서 세션·운동·세트·코멘트 기록</li><li><span class="detail-list-marker" aria-hidden="true"></span>세트 추가 시 자동 휴식 타이머</li><li><span class="detail-list-marker" aria-hidden="true"></span>카테고리별 운동 분류 (PUSH/PULL/LEGS 등)</li><li><span class="detail-list-marker" aria-hidden="true"></span>이전 세션 참고 및 스와이프 제스처</li><li><span class="detail-list-marker" aria-hidden="true"></span>운동일지 내보내기·가져오기·초기화</li><li><span class="detail-list-marker" aria-hidden="true"></span>로컬 저장 (로그인 불필요)</li></ul></article>
+        <article class="detail-block reveal"><h2 class="detail-block-title">구현 과정</h2><ul class="detail-list"><li><span class="detail-list-marker" aria-hidden="true"></span>React + TypeScript로 운동 기록 UI와 상태 관리를 구현했습니다.</li><li><span class="detail-list-marker" aria-hidden="true"></span>Local Storage 기반으로 데이터를 저장하도록 설계했습니다.</li><li><span class="detail-list-marker" aria-hidden="true"></span>Capacitor를 연동해 iOS 앱으로 빌드하고 햅틱 피드백을 추가했습니다.</li></ul></article>
+        <article class="detail-block reveal"><h2 class="detail-block-title">배운 점</h2><ul class="detail-list"><li><span class="detail-list-marker" aria-hidden="true"></span>모바일 퍼스트 UX 설계와 터치 제스처 처리</li><li><span class="detail-list-marker" aria-hidden="true"></span>React Context로 복잡한 상태를 관리하는 방법</li><li><span class="detail-list-marker" aria-hidden="true"></span>Capacitor를 활용한 웹 → iOS 앱 변환 경험</li></ul></article>
+        <article class="detail-block reveal"><h2 class="detail-block-title">스크린샷 갤러리</h2><div class="gallery-grid"><button type="button" class="gallery-item" data-lightbox-src="../../images/projects/workout-journal-mobile.png" data-lightbox-caption="메인 화면"><div class="gallery-item__media"><img src="../../images/projects/workout-journal-mobile.png" alt="메인 화면" loading="lazy"></div><span class="gallery-item__caption">메인 화면</span></button></div></article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><p class="site-footer__copy">Developed by Lake Kim | GitHub: <a href="https://github.com/lakekimhandsome" target="_blank" rel="noopener noreferrer">lakekimhandsome</a> | <a href="mailto:contact@lakekim.com">contact@lakekim.com</a></p></footer>
+
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-modal="true" aria-label="스크린샷 확대 보기">
+    <div class="lightbox__backdrop"></div>
+    <button type="button" class="lightbox__close" aria-label="닫기"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.3 5.71 12 12l6.3 6.29-1.41 1.42L10.59 13.4 4.29 19.71 2.88 18.3 9.17 12 2.88 5.71 4.29 4.29 10.59 10.6l6.3-6.31z" /></svg></button>
+    <button type="button" class="lightbox__prev" aria-label="이전"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.41 7.41 14 6l-6 6 6 6 1.41-1.41L10.83 12z" /></svg></button>
+    <button type="button" class="lightbox__next" aria-label="다음"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8.59 16.59 13.17 12 8.59 7.41 10 6l6 6-6 6z" /></svg></button>
+    <div class="lightbox__dialog"><figure class="lightbox__figure"><img class="lightbox__image" src="" alt=""></figure><p class="lightbox__caption"></p></div>
+  </div>
+
+  <script src="../../script.js"></script>
+  <script src="../../project-detail.js"></script>
+</body>
+</html>
