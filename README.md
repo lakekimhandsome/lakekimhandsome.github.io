@@ -38,25 +38,33 @@ portfolio/
 ├── index.html
 ├── style.css
 ├── script.js
+├── project-detail.js
 ├── favicon.svg
+├── CNAME
+├── images/
+│   └── projects/
+│       ├── academy-website.png
+│       ├── bokshil-cafe.png
+│       ├── matcha-mall.png
+│       ├── restaurant-kiosk.png
+│       ├── workout-journal.png
+│       ├── caferadar/
+│       ├── speaklog/
+│       └── workout-journal/
+├── projects/
+│   ├── academy-website/
+│   │   └── index.html
+│   ├── bokshil-cafe/
+│   │   └── index.html
+│   ├── caferadar/
+│   │   └── index.html
+│   ├── matcha-mall/
+│   │   └── index.html
+│   ├── restaurant-kiosk/
+│   │   └── index.html
+│   ├── speaklog/
+│   │   └── index.html
+│   └── workout-journal/
+│       └── index.html
 └── README.md
 ```
-
-## 로컬 실행
-
-별도의 빌드 과정 없이 브라우저에서 `index.html`을 열면 됩니다.
-
-```bash
-# macOS
-open index.html
-```
-
-또는 Live Server 등 정적 파일 서버를 사용해도 됩니다.
-
-## GitHub Pages 배포
-
-1. GitHub에 `portfolio` 저장소를 생성합니다.
-2. 이 폴더의 파일을 저장소에 push합니다.
-3. 저장소 **Settings → Pages**에서 Source를 `Deploy from a branch`로 설정합니다.
-4. Branch를 `main`, Folder를 `/ (root)`로 선택 후 Save합니다.
-5. 배포가 완료되면 `https://<username>.github.io/portfolio/`에서 확인할 수 있습니다.
